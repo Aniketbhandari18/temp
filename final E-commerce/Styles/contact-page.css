@@ -1,9 +1,10 @@
 body{
+    height: 100vh;
     overflow-x:hidden ;
     padding-top: 80px;
-    background-image: url(background-contact.webp);
+    background-image: url(https://raw.githubusercontent.com/Krishna-AGG18/Project_Weave_the_web/refs/heads/main/background-contact.webp);
     background-repeat: no-repeat;
-    background-size: cover;     
+    background-size: cover;
 }
 #refer:link, #refer:visited{
     color: white;
@@ -124,7 +125,6 @@ body{
 }
 .image-4{
     animation: images4 1.5s ease 1 normal;
-    /* background:; */
 }
 @keyframes images1{
     from{left: -50vw;}
@@ -166,7 +166,10 @@ body{
 #name4{
     grid-area: 1/1/2/4;
 }
-.links a:link, .links a:visited, .links a:active{
+.navebar a{
+    text-decoration: none;
+}
+.links a:link, .links a:visited, .links a:active, .navebar a:visited, .navebar a:active{
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -210,5 +213,163 @@ body{
                 0 0 50px rgba(255, 255, 255, 0.4),  
                 0 0 100px rgba(0, 0, 0, 0.8);          
     border-radius: 15px;
-    margin: 10px;
+    /* margin: 10px;
+    margin-top: -8px; */
+}
+
+
+
+.navebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 87px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+    font-size: 18px;
+    transition: all .3s ease;
+    overflow: hidden;
+    z-index: 10;
+}
+.center-side a:hover{
+    color: rgb(2, 203, 253);
+    text-decoration: none;
+}
+.logo{
+    font-size: 24px;
+    margin-right: 18px;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+.center-side{
+    display: flex;
+    justify-content: space-between;
+    transition: all .2s ease;
+}
+.contact{
+    margin-right: 0 !important;
+}
+.center-side div{
+    margin-right: 20px;
+    transition: all .2s ease;
+}
+.right-side{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    transition: all .2s ease;
+}
+.right-side div:first-child{
+    margin-top: 2px;
+    transition: all .2s ease;
+}
+.right-side div{
+    font-size: 27px;
+    margin-left: 36px;
+    transition: all .2s ease;
+}
+
+.cart-icon{
+    width: 30px;
+    background-color: black;
+}
+.menu-icon{
+    display: none;
+    position: relative;
+    z-index: 100;
+}
+
+
+
+@media (max-width: 804px){
+    .center-side{
+        display: none;
+    }
+    .logo{
+        font-size: 26px;
+        margin-right: 0;
+        font-weight: 600;
+    }
+    .center-side div{
+        margin-right: 0;
+        text-align: center;
+        margin-top: 18px;
+        font-size: 20px;
+    }
+    .contact{
+        margin-bottom: 18px;
+    }
+    .profile{
+        margin-left: 0;
+    }
+    .right-side{
+        font-size: 22px;
+        margin-right: 33px;
+    }
+    .right-side img{
+        width: 28px;
+    }
+    .menu-icon{
+        position: fixed;
+        right: 25px;
+        top: 27px;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 23px;
+        background-color: white;
+    }
+    .navebar{
+        padding-right: 62px;
+        padding-left: 25px;
+    }
+}
+@media (max-width: 460px){
+    form{
+        width: 280px;
+    }
+    .email-input-container,
+    .password-input-container{
+        width: 280px;
+    }
+    .input{
+        width: 280px;
+    }
+    .query{
+        width: 280px;
+    }
+}
+@media (max-width: 425px){
+    .navebar{
+        padding-right: 77px;
+    }
+    .logo{
+        font-size: 22px;
+    }
+    .right-side{
+        display: none;
+    }
+}
+
+.center-side-expanded{
+    display: flex;
+    flex-direction: column;
+
+}
+.expand{
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* height: 312px;
+    padding: 14px 0px; */
+    height: 332px;
+    padding: 24px 0px 18px 0px;
 }

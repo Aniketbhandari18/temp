@@ -1,5 +1,4 @@
 body{
-    font-family: arial;
     overflow-x:hidden ;
     padding-top: 87px;
 }
@@ -393,10 +392,23 @@ body{
     overflow: hidden;
     z-index: 10;
 }
+.navebar a{
+    text-decoration: none;
+}
+.navebar a:visited, .navebar a:active, .contact a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.center-side a:hover{
+    color: rgb(2, 203, 253);
+    text-decoration: none;
+}
+
 .logo{
     font-size: 24px;
     margin-right: 18px;
-    font-weight: 600;
+    font-weight: 500;
     transition: all .3s ease;
 }
 .center-side{

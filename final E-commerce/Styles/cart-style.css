@@ -9,7 +9,6 @@ button {
     padding: 9px 12px; /* Keep cursor pointer */
 }
 body{
-    font-family: arial;
     overflow-x:hidden ;
     padding-top: 200px;
 }
@@ -116,20 +115,6 @@ body{
     overflow-x: hidden;
 }
 
-nav{
-    background-color: bisque;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    font-size: 16px;
-    width: 75vw;
-    height: 50px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .logo{
     font-size: 20px;
@@ -231,11 +216,11 @@ nav{
 .cart-item-details .cart-item-name{
     margin-top: 2px;
     font-weight: 500;
-    margin-bottom: 8px;
+    margin-bottom: 3px;
 }
 .cart-item-details .cart-item-price{
     font-weight: 600;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 .cart-item-details .cart-item-quantity span{
     color: rgb(0, 113, 133);
@@ -366,6 +351,18 @@ nav{
     transition: all .3s ease;
     overflow: hidden;
 }
+.navebar a{
+    text-decoration: none;
+}
+.navebar a:visited, .navebar a:active, .contact a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.center-side a:hover{
+    color: rgb(2, 203, 253);
+    text-decoration: none;
+}
 .logo{
     font-size: 24px;
     margin-right: 18px;
@@ -387,11 +384,11 @@ nav{
 .right-side{
     display: flex;
     justify-content: space-between;
-    font-size: 24px;
+    font-size: 29px;
     transition: all .2s ease;
 }
 .right-side div:first-child{
-    margin-top: 2px;
+    margin-top: 3.5px;
     transition: all .2s ease;
 }
 .right-side div{
@@ -431,7 +428,7 @@ nav{
         margin-left: 0;
     }
     .right-side{
-        font-size: 22px;
+        font-size: 28px;
         /* margin-right: 33px; */
     }
     .right-side img{

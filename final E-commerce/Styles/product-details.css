@@ -228,6 +228,18 @@ body{
     transition: all .3s ease;
     overflow: hidden;
 }
+.navebar a{
+    text-decoration: none;
+}
+.navebar a:visited, .navebar a:active, .contact a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.center-side a:hover{
+    color: rgb(2, 203, 253);
+    text-decoration: none;
+}
 .logo{
     font-size: 24px;
     margin-right: 18px;
@@ -249,11 +261,11 @@ body{
 .right-side{
     display: flex;
     justify-content: space-between;
-    font-size: 24px;
+    font-size: 29px;
     transition: all .2s ease;
 }
 .right-side div:first-child{
-    margin-top: 2px;
+    margin-top: 4px;
     transition: all .2s ease;
 }
 .right-side div{
